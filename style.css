@@ -218,8 +218,8 @@ body {
 
 /* Season */
 .season {
-  /* margin-top: 214px; */
-  margin: 214px 0;
+  margin-top: 214px;
+  /* margin: 214px 0; */
 }
 
 .season__content {
@@ -303,4 +303,114 @@ body {
   height: 2px;
   background-color: white;
   border: 2px;
+}
+
+/* Actual */
+.actual {
+  margin-top: 78px;
+}
+
+.actual__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-end;
+  gap: 60px;
+}
+
+.actual__content::before {
+  content: "Актуальное";
+  text-transform: uppercase;
+  color: #1f252d;
+  position: absolute;
+  top: -65px;
+
+  font-family: "Usually-font-Bold", sans-serif;
+  font-size: 160px;
+  font-weight: 700;
+  line-height: 160px;
+  text-align: right;
+
+  z-index: -1;
+}
+
+.actual__inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 60px;
+}
+
+.actual__title {
+  font-family: "Uindbase Font 1", sans-serif;
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 100px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.actual__cards {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.actual__card {
+  width: 272px;
+  /* height: 461px; */
+  border-radius: 10px;
+  background: #10171f;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.actual__card-img {
+  width: 300px;
+  height: 409px;
+}
+
+.actual__card-title {
+  font-family: "Uindbase Font 1", sans-serif;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+.actual__card-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 9px 9px 9px;
+}
+
+.actual__card-cost {
+  font-family: "Uindbase Font 1", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+.actual__refers {
+  margin-right: 160px;
+}
+
+.actual__card-cart {
+  font-family: "Uindbase Font 1", sans-serif;
+  text-decoration: underline;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: white;
+  text-transform: uppercase;
 }
