@@ -178,6 +178,51 @@
           </div>
         </div>
       </div>
+      <div class="contact">
+        <div class="contact__content container">
+          <h1 class="contact__title">мы всегда на связи</h1>
+          <div class="contact__actions">
+            <div
+              class="contact__map"
+              id="map"
+              style="width: 1000px; height: 550px"></div>
+
+            <script src="https://mapgl.2gis.com/api/js/v1"></script>
+            <script>
+              const map = new mapgl.Map("map", {
+                center: [76.669645, 43.208371],
+                zoom: 18.61,
+                pitch: 40,
+                rotation: -122.27,
+                key: "e21593de-ee40-4760-95f9-f9692fb049ad",
+                styleZoom: 17,
+                style: "e05ac437-fcc2-4845-ad74-b1de9ce07555",
+                defaultBackgroundColor: "#3b3b3b",
+              });
+              const marker = new mapgl.Marker(map, {
+                coordinates: [76.669645, 43.208371],
+              });
+            </script>
+            <div class="contact__details">
+              <p class="contact__phone">8(000)000-00-00</p>
+              <p class="contact__email">info@advolatum.ru</p>
+              <label for="" class="contact__socials">
+                <a href="/">
+                  <img src="./assets/images/telegram.png" alt="Telegram icon" />
+                </a>
+                <a href="/">
+                  <img src="./assets/images/vk.png" alt="Vk icon" />
+                </a>
+                <a href="/">
+                  <img
+                    src="./assets/images/instagram.png"
+                    alt="Instagram icon" />
+                </a>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
