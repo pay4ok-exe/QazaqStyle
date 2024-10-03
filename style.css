@@ -476,3 +476,48 @@ body {
   line-height: 25px;
   text-align: left;
 }
+
+/* Footer */
+.footer {
+  margin: 110px 0 75px 0;
+}
+
+.footer__content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer__privacy {
+  font-family: Rosario;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18.18px;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.footer__items {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+}
+
+.footer__logo {
+  width: 195.24px;
+  height: 45px;
+}
+
+.footer__texts {
+  display: flex;
+  gap: 16px;
+  font-family: Rosario;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18.18px;
+  text-align: center;
+}
