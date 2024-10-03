@@ -460,6 +460,11 @@ body {
   align-items: center;
 }
 
+.contact__map {
+  width: 1000px;
+  height: 550px;
+}
+
 .contact__details {
   display: flex;
   align-items: center;
@@ -520,4 +525,90 @@ body {
   font-weight: 300;
   line-height: 18.18px;
   text-align: center;
+}
+
+/* Adaptive */
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1248px;
+    margin: 0 auto;
+  }
+
+  .hero::before {
+    top: -50px;
+  }
+
+  .hero__title {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 87.1px;
+    text-align: center;
+  }
+
+  .season__title {
+    font-size: 100px;
+    align-self: flex-start;
+    width: 50%;
+    text-align: left;
+    text-wrap: wrap;
+  }
+
+  .season__content::before {
+    text-align: left;
+    text-wrap: wrap;
+    top: -80px;
+  }
+
+  .season__inner {
+    width: 1248px;
+    height: 587px;
+    margin: 0;
+    margin-bottom: 16px;
+    position: relative;
+  }
+
+  .actual__content::before {
+    content: "Актуаль ное";
+    font-size: 180px;
+    width: 100%;
+    text-wrap: wrap;
+  }
+
+  .actual__cards {
+    margin-top: 100px;
+  }
+
+  .actual__refers {
+    margin-right: 0;
+  }
+
+  .contact__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .contact__content::before {
+    top: -60px;
+  }
+
+  .contact__map {
+    width: 834px;
+    height: 425px;
+  }
+  .footer__content {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 100%;
+    padding: 0 auto;
+  }
+}
+
+@media (max-width: 428px) {
+  .container {
+    max-width: 1568px;
+    margin: 0 auto;
+  }
 }
