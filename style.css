@@ -3,6 +3,16 @@
   src: url(./assets/fonts/UF1.ttf);
 }
 
+@font-face {
+  font-family: "Usually-font";
+  src: url(./assets/fonts/Usually-font.otf);
+}
+
+@font-face {
+  font-family: "Usually-font-Bold";
+  src: url(./assets/fonts/Usually-font-Bold.otf);
+}
+
 *,
 *::after,
 *::before {
@@ -60,6 +70,10 @@ body {
   justify-content: space-between;
 }
 
+.header__logo img {
+  width: 121.64px;
+  height: 30px;
+}
 .header__nav-list {
   display: flex;
   align-items: center;
@@ -74,9 +88,13 @@ body {
   color: #ffffff;
 }
 
+.header__nav-link-selected {
+  color: #d1c12b;
+}
+/* 
 .header__logo {
   margin: 0 40px 20px 0;
-}
+} */
 
 .header__type {
   /* display: flex; */
@@ -95,4 +113,100 @@ body {
   line-height: 15px;
   padding: 0;
   text-align: center;
+}
+
+/* Hero */
+.hero {
+  margin-top: 135px;
+  position: relative;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  color: #ffffff;
+  width: 100%;
+}
+
+.hero::before {
+  content: "ОДЕЖДА ДЛЯ КАЖДОГО";
+  color: #1f252d;
+  position: absolute;
+
+  font-family: "Usually-font-Bold", sans-serif;
+  font-size: 170px;
+  font-weight: 700;
+  line-height: 148.07px;
+  text-align: center;
+  padding-top: 85px;
+  z-index: 0;
+}
+
+.hero__content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 178px;
+}
+
+.hero__inner {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__logo img {
+  width: 209.94px;
+  height: 49.94px;
+}
+
+.hero__texts {
+  text-align: center;
+}
+
+.hero__title {
+  font-family: "Usually-font-Bold", sans-serif;
+  font-size: 130px;
+  font-weight: 700;
+  line-height: 113.23px;
+  text-align: center;
+  padding: 47px 0 17px 0;
+}
+
+.hero__subtitle {
+  font-family: inherit;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.hero__button {
+  border-radius: 50px;
+  border: 2px solid #d1c12b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0 0 8px #d1c12b, 0 0 16px #d1c12b; */
+}
+
+.hero__button img {
+  width: 23px;
+  margin: 19px 30px;
+  height: 16px;
+  margin-right: 8px;
+  filter: drop-shadow(0 0 8px #d1c12b);
+}
+
+.hero__button p {
+  align-items: stretch;
+  font-family: Rosario;
+  padding: 14.5px 17.5px;
+  padding-right: 38.5px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.24px;
+  text-align: center;
+  color: #d1c12b;
+  text-shadow: 0 0 8px #d1c12b, 0 0 16px #d1c12b;
 }
