@@ -809,7 +809,7 @@ body {
   }
 
   .footer__social-800 {
-    display: block;
+    display: inline;
   }
 
   .footer__privacy {
@@ -1042,5 +1042,39 @@ body {
     font-weight: 400;
     line-height: 15px;
     text-align: left;
+  }
+
+  .contact {
+    margin-top: 70px;
+  }
+
+  .contact__content::before {
+    display: none;
+  }
+
+  .contact__title {
+    font-family: Uindbase Font 1;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .contact__map {
+    width: 428px;
+    height: 367px;
+  }
+
+  .footer {
+    margin: 10px 0 30px 0;
+  }
+
+  .footer__content {
+    gap: 10px;
+  }
+
+  .footer__social-800 {
+    display: none;
   }
 }
